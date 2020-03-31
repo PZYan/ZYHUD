@@ -16,8 +16,9 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ZYHUD"
-  spec.version      = "0.0.1"
+  spec.version      = "1.0.0"
   spec.summary      = "一个网络请求指示器"
+  spec.swift_version = '5.0'
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -39,7 +40,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -65,7 +66,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :its
-  # spec.platform     = :ios, "9.0"
+  spec.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -80,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/PZYan/ZYHUD.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/PZYan/ZYHUD.git", :tag => "1.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -106,7 +107,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  spec.resources = "ZYHUD/Assets/ZYHUD.bundle"
+  # spec.resources = ['Assets/*.png','Assets/.xib']
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
