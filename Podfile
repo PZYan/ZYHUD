@@ -9,5 +9,6 @@ target 'ZYHUDdemo' do
   use_frameworks!
 
   # Pods for ZYHUDdemo
+  pod 'ZYHUD'
 
 end

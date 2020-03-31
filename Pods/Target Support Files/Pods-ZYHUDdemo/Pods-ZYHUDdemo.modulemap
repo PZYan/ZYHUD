@@ -1,0 +1,6 @@
+framework module Pods_ZYHUDdemo {
+  umbrella header "Pods-ZYHUDdemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

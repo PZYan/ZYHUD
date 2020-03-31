@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01490F7A9EC78272F86FFFA9 /* Pods_ZYHUDdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D9A5E5A5BB3E26677E62D6 /* Pods_ZYHUDdemo.framework */; };
 		4C14A7132432DAC90065337A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14A7122432DAC90065337A /* AppDelegate.swift */; };
 		4C14A7152432DAC90065337A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14A7142432DAC90065337A /* SceneDelegate.swift */; };
 		4C14A7172432DAC90065337A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14A7162432DAC90065337A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C39D52E35F97341419624CF /* Pods-ZYHUDdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYHUDdemo.debug.xcconfig"; path = "Target Support Files/Pods-ZYHUDdemo/Pods-ZYHUDdemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4C14A70F2432DAC90065337A /* ZYHUDdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYHUDdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C14A7122432DAC90065337A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C14A7142432DAC90065337A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		4C14A71B2432DACA0065337A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C14A71E2432DACA0065337A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C14A7202432DACA0065337A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97D9A5E5A5BB3E26677E62D6 /* Pods_ZYHUDdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYHUDdemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE3DA940A1CD760FE82A650 /* Pods-ZYHUDdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYHUDdemo.release.xcconfig"; path = "Target Support Files/Pods-ZYHUDdemo/Pods-ZYHUDdemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01490F7A9EC78272F86FFFA9 /* Pods_ZYHUDdemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				4C14A7112432DAC90065337A /* ZYHUDdemo */,
 				4C14A7102432DAC90065337A /* Products */,
+				F5449AE1D5DEA2CBC0B2B6E8 /* Pods */,
+				C406457C0AF6BA85C7B69648 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = ZYHUDdemo;
 			sourceTree = "<group>";
 		};
+		C406457C0AF6BA85C7B69648 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97D9A5E5A5BB3E26677E62D6 /* Pods_ZYHUDdemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5449AE1D5DEA2CBC0B2B6E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C39D52E35F97341419624CF /* Pods-ZYHUDdemo.debug.xcconfig */,
+				9AE3DA940A1CD760FE82A650 /* Pods-ZYHUDdemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C14A7232432DACA0065337A /* Build configuration list for PBXNativeTarget "ZYHUDdemo" */;
 			buildPhases = (
+				0E53E5C7EC3719CE40B7848F /* [CP] Check Pods Manifest.lock */,
 				4C14A70B2432DAC90065337A /* Sources */,
 				4C14A70C2432DAC90065337A /* Frameworks */,
 				4C14A70D2432DAC90065337A /* Resources */,
+				70C5650F44733A538E667FC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E53E5C7EC3719CE40B7848F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZYHUDdemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70C5650F44733A538E667FC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZYHUDdemo/Pods-ZYHUDdemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZYHUDdemo/Pods-ZYHUDdemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZYHUDdemo/Pods-ZYHUDdemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C14A70B2432DAC90065337A /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		4C14A7242432DACA0065337A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C39D52E35F97341419624CF /* Pods-ZYHUDdemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		4C14A7252432DACA0065337A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE3DA940A1CD760FE82A650 /* Pods-ZYHUDdemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
