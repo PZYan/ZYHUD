@@ -107,7 +107,8 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  spec.resources = "Pod/Assets/*.{png,xib}"
+  spec.resource = 'Pod/Assets'
+  spec.resources = "ZYHUD/Assets/*.{png,xib}"
 
  
 
