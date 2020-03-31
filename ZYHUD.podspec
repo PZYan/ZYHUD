@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ZYHUD"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "一个网络请求指示器"
   spec.swift_version = '5.0'
 
@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/PZYan/ZYHUD.git", :tag => "1.0.2" }
+  spec.source       = { :git => "https://github.com/PZYan/ZYHUD.git", :tag => "1.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -107,9 +107,12 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  spec.resource = 'Pod/Assets'
-  spec.resources = "ZYHUD/Assets/*.{png,xib}"
+  # spec.resource = 'Pod/Assets'
+  # spec.resources = "ZYHUD/Assets/*.{png,xib}"
 
+  spec.resource_bundles = {
+    'ZYHUD' => ['ZYHUD/Assets/*']	
+  }
  
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
